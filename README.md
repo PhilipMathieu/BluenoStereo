@@ -27,8 +27,8 @@ The skeleton of a smarter car stereo for Raspbery Pi enthusiasts such as yoursel
 
 ## In Progress
 - Voice control
-  - Failed to install Jasper, the "open source platform for developing always-on, voice-controlled applications"
-  - In the process butchered all audio settings such that backup plan, Snowboy Hotword Detection, cannot connect to microphone
+  - Failed to install [Jasper](http://jasperproject.github.io/), the "open source platform for developing always-on, voice-controlled applications"
+  - In the process butchered all audio settings such that backup plan, [Snowboy Hotword Detection](https://snowboy.kitt.ai/), cannot connect to microphone
   - Likely requires fresh Raspbian install to rectify
   - However, all code written with this in mind -> modularity will make it easy to add functionality
 - Facial recognition
