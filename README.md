@@ -23,7 +23,6 @@ The skeleton of a smarter car stereo for Raspbery Pi enthusiasts such as yoursel
   - Either way, saves file
 - OBD-II Logging
   - SQLite database creation and editing works
-  - Most recent data available over Flask API
 
 ## In Progress
 - Voice control
@@ -38,3 +37,4 @@ The skeleton of a smarter car stereo for Raspbery Pi enthusiasts such as yoursel
 - Bluetooth Interface with OBD-II
   - $11 Amazon unit appears to no longer be working (cannot connect from Android app either)
   - Telemetry code needs to be updated to include the actual interaction with a replacement module
+  - Eventually want to make this data queriable by voice commands
