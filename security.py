@@ -11,9 +11,11 @@ if __name__ == '__main__':
     model = cv2.face.createEigenFaceRecognizer()
     model.load(config.TRAINING_FILE)
     print '[Message] Training data loaded!'
+
     # Take picture
     camera = cv2.VideoCapture(0)
     ret, image = camera.read()
+
     # Attempt face detection
     bwimage = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
     result = face.detect_single(bwimage)
@@ -25,6 +27,7 @@ if __name__ == '__main__':
         x, y, w, h = result
         # Crop and resize image to face.
         image = face.resize(face.crop(image, x, y, w, h))
-    # Send email with picture
+
+    # Save the picture locally
     filename = 'drivers/' + strftime("%d%m%Y.%H%M%S", gmtime()) + ".png"
     cv2.imwrite(filename, image)

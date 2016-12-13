@@ -17,6 +17,7 @@ def startup():
     thread.daemon = True
     thread.start()
 
+    # blink the white LED three times once starte
     udpled.blink("WwWwWw")
 
     # begin the security logger
@@ -44,8 +45,10 @@ print("[Info] Telling Sleepy Pi we are running pin 25")
 # Set shutdown handler
 GPIO.add_event_detect(24, GPIO.RISING, callback=shutdown, bouncetime=300)
 
+# initialize
 startup()
 
+# kill time
 try:
     while(True):
         time.sleep(1000)
